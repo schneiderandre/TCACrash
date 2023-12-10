@@ -108,7 +108,7 @@ struct ListView: View {
 struct Row {
     @ObservableState
     struct State: Identifiable {
-        @PresentationState var destination: Destination.State?
+        @Presents var destination: Destination.State?
         let name: String
         let id: UUID
     }
